@@ -15,7 +15,7 @@ public class AppRestController {
 	
 	 @Autowired
 	 UserService userService;
-	
+	 
 	 @RequestMapping(value = "/user", method = RequestMethod.GET)
 	 public List<User> listAllUsers() {
 		 List<User> users = userService.findAllUsers();
